@@ -1,0 +1,135 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.5.7",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_apigee_addons_config.c",
+          "mode": "managed",
+          "type": "google_apigee_addons_config",
+          "name": "c",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "addons_config": [],
+            "org": "PDE-*",
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "addons_config": []
+          }
+        },
+        {
+          "address": "google_apigee_addons_config.nc",
+          "mode": "managed",
+          "type": "google_apigee_addons_config",
+          "name": "nc",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "addons_config": [],
+            "org": "test",
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "addons_config": []
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_apigee_addons_config.c",
+      "mode": "managed",
+      "type": "google_apigee_addons_config",
+      "name": "c",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "addons_config": [],
+          "org": "PDE-*",
+          "timeouts": null
+        },
+        "after_unknown": {
+          "addons_config": [],
+          "id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "addons_config": []
+        }
+      }
+    },
+    {
+      "address": "google_apigee_addons_config.nc",
+      "mode": "managed",
+      "type": "google_apigee_addons_config",
+      "name": "nc",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "addons_config": [],
+          "org": "test",
+          "timeouts": null
+        },
+        "after_unknown": {
+          "addons_config": [],
+          "id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "addons_config": []
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google"
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_apigee_addons_config.c",
+          "mode": "managed",
+          "type": "google_apigee_addons_config",
+          "name": "c",
+          "provider_config_key": "google",
+          "expressions": {
+            "org": {
+              "constant_value": "PDE-*"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "google_apigee_addons_config.nc",
+          "mode": "managed",
+          "type": "google_apigee_addons_config",
+          "name": "nc",
+          "provider_config_key": "google",
+          "expressions": {
+            "org": {
+              "constant_value": "test"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-12-11T02:54:23Z"
+}
